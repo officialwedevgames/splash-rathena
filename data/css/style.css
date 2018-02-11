@@ -1,0 +1,304 @@
+@font-face {font-family: "Gotham"; src: url(../fonts/Gotham-Book.otf); font-weight: normal; } 
+@font-face {font-family: "Gotham-Bold"; src: url(../fonts/Gotham-Bold.otf); font-weight: normal; }
+@font-face {font-family: "GothamCondensed-Book"; src: url(../fonts/GothamCondensed-Book.otf); font-weight: normal; }
+
+
+body{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;	
+	background: url(../img/bg.jpg) top center;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgtop {
+	width: 100%;
+	height: 32px;	
+	background: url(../img/bgtop.png) top center repeat-x;
+}
+
+.top {
+	margin: auto;
+	width: 1150px;
+	height: 32px;
+	font-family: "Gotham", sans-serif;
+	overflow: hidden;
+}
+
+.server-status {
+	position: absolute;
+	margin: 9px 0 0 111px;
+	width: 100px;
+	text-align: center;
+	font-size: 9pt;
+}
+
+.player-online {
+	position: absolute;
+	margin: 9px 0 0 332px;
+	width: 100px;
+	text-align: center;
+	font-size: 9pt;
+	color: #fff;
+}
+
+.server-time {
+	position: absolute;
+	margin: 9px 0 0 779px;
+	width: 100px;
+	text-align: center;
+	font-size: 9pt;
+	color: #fff;
+}
+
+.server-count {
+	position: absolute;
+	margin: 9px 0 0 1048px;
+	width: 100px;
+	text-align: center;
+	font-size: 9pt;
+	color: #fff;
+}
+
+.container {
+	margin: auto;
+	width: 1150px;
+}
+
+.lpane {
+	float: left;
+	margin-top: 100px;
+	width: 355px;
+}
+
+.register {
+	position: relative;
+	top: -30px;
+	background: url('../img/bgregister.png') no-repeat;
+	width: 355px;
+	height: 446px;
+	overflow: hidden;
+}
+
+#registerForm{	
+	position: relative;
+	top: 100px;
+	overflow: hidden;
+}
+
+#form input[type=text], #form input[type=password], #form input[type=date]{
+	outline: none;
+	width:140px;
+	height:20px;
+	background: #c4e0e7;
+	margin-bottom:5px;
+	margin-top: 3px;
+	border: 1px solid #b3cdd3;
+	padding:0 5px;
+	color: #333;
+}
+
+#form{
+	font-family: "Gotham", sans-serif;
+	font-size: 9pt; 
+	color: #6c4228;
+	margin: 12px 0 0 40px;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);	
+}
+
+#btnreg{
+	opacity: 0.8;
+	border: 0;
+	margin: 0;
+	outline: 0;
+	width: 269px;
+	height: 49px;
+	background: url(../img/btncreate.png);	
+	-webkit-transition: all 0.3s;
+  	-moz-transition: all 0.3s;
+  	-ms-transition: all 0.3s;
+  	-o-transition: all 0.3s;
+  	transition: all 0.3s;	
+}
+
+#btnreg:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+
+input[type="radio"] {
+	content:"";
+	position:absolute; 
+	opacity: 0; 
+	-moz-opacity: 0; 
+	-webkit-opacity: 0; 
+	-o-opacity: 0; 
+} 
+input[type="radio"] + label {
+	content:"";
+	position:relative;
+	top: 3px; 
+	color: #6c4228;
+	padding: 0 0 0 20px; 
+	font-size: 12px; 
+	cursor: pointer; 
+} 
+
+#errorWrapper{
+	width: 1206px;
+	margin: auto;
+}
+
+input[type="radio"] + label:before {content:""; position:absolute; top: 2px; left: 5px; height: 15px; width: 20px; background: url(../img/radio.png) no-repeat; } 
+input[type="radio"]:checked + label:before { background-position: 0 -18px; position:absolute; top: 2px; }
+
+.message { width: 200px; background: #27ae60; padding: 5px; border-radius: 0 0 5px 5px; color: #000; position: absolute; z-index: 1; margin-left: 95px;  top: 0px; font-size: 10pt; } .error { background: #c0392b; color: #FFF; } .message ul li { list-style: square; } .success { background: #abd43a; color: #FFF; }
+
+
+.rpane {
+	float: left;
+	margin-top: 90px;
+}
+
+.content {
+	background: url(../img/bgcontent.png);
+	width: 778px;
+	height: 616px;
+}
+
+.countdown {
+	position: absolute;
+	margin-top: -110px;
+	background: url(../img/bgcountdown.png);
+	width: 507px;
+	height: 446px;
+}
+
+.timer {
+	margin: 320px 0 0 -40px;
+	text-align: center;
+	font-family: "GothamCondensed-Book", sans-serif;
+	font-size: 25pt;
+	color: #111;
+}
+
+.video {
+	position: absolute;
+	margin: 345px 0 0 30px;
+}
+
+.downloadpc {
+	position: absolute;
+	margin: 10px 0 0 485px;
+}
+
+.downloadcp {
+	position: absolute;
+	margin: 130px 0 0 485px;
+}
+
+.vote {
+	position: absolute;
+	margin: 270px 0 0 485px;
+}
+
+.socials {
+	position: absolute;
+	background: url(../img/bgsocials.png);
+	width: 274px;
+	height: 254px;
+	margin: 345px 0 0 485px;
+}
+
+.twitch {
+	position: absolute;
+	margin: 90px 0 0 10px;
+}
+
+.youtube {
+	position: absolute;
+	margin: 90px 0 0 90px;
+}
+
+.facebook {
+	position: absolute;
+	margin: 170px 0 0 10px;
+}
+
+.twitter {
+	position: absolute;
+	margin: 170px 0 0 90px;
+}
+
+.footer {
+	margin: auto;
+	width: 1150px;
+}
+
+.sitemap {
+	margin: auto;
+	width: 60%;
+	background: rgba(0,0,0,0.5);
+	border-radius: 5px;
+	font-family: "Gotham", sans-serif;
+	font-size: 9pt;
+	padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    color: #aaa;
+}
+
+li a {
+    color: #ccc;
+    text-decoration: none;
+	padding: 5px;
+}
+
+li a:hover {
+   color: #fff;
+}
+
+.btnanimate {
+	opacity: 0.8;
+	-webkit-transition: all 0.3s;
+  	-moz-transition: all 0.3s;
+  	-ms-transition: all 0.3s;
+  	-o-transition: all 0.3s;
+  	transition: all 0.3s;
+}
+
+.btnanimate:hover {
+	opacity: 1;
+	-webkit-transition: all 0.3s;
+  	-moz-transition: all 0.3s;
+  	-ms-transition: all 0.3s;
+  	-o-transition: all 0.3s;
+  	transition: all 0.3s;
+}
+
+.copyright {
+	font-family: "Gotham", sans-serif;
+	font-size: 9pt;
+	margin-top: 20px;
+	text-align: center;
+	color: #543640;
+}
+
+.clearfix {
+	clear: both;
+}
